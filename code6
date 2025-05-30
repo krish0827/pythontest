@@ -1,0 +1,29 @@
+Given an array of integers, calculate the ratios of its elements that are positive,negative , and zero. Print the decimal value of each fraction on a new line with 6 places after the decimal.
+
+def plusMinus(arr):
+    neg=0
+    pos=0
+    ze=0
+    n = len(arr)
+    for i in range(n):
+        if arr[i]>=1:
+            pos+=1
+        elif arr[i]<=-1:
+            neg+=1
+        else:
+            ze+=1
+    a=pos/n
+    b=neg/n
+    c=ze/n
+    print(a)
+    print(b)
+    print(c)
+            
+    
+
+if __name__ == '__main__':
+    n = int(input().strip())
+
+    arr = list(map(int, input().rstrip().split()))
+
+    plusMinus(arr)
