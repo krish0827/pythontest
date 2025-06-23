@@ -1,0 +1,5 @@
+Your task is to reverse an array of integers
+
+def reverseArray(a):
+    a.reverse()
+    return(a)
